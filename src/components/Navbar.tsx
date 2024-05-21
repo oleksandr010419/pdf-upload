@@ -8,14 +8,14 @@ const Logo = () => {
 
 export default function Navbar() {
     const NavbarList = [
-        {
-          name: "Components",
-          link: "/components",
-        },
-        {
-          name: "Templates",
-          link: "/templates",
-        },
+        // {
+        //   name: "Components",
+        //   link: "/components",
+        // },
+        // {
+        //   name: "Templates",
+        //   link: "/templates",
+        // },
         {
           name: "Contact Us",
           link: "/contact",
@@ -47,7 +47,7 @@ export default function Navbar() {
                     key={index}
                     onClick={() => setSelected(data.name)}
                   >
-                    <span className="font-nunito text-lg text-center text-white font-semibold opacity-80 cursor-pointer md:flex md:items-center hidden">
+                    <span className="font-nunito text-lg text-center text-white font-semibold opacity-80 cursor-pointer md:flex md:items-center">
                       {data.name}
                     </span>
                     <div
@@ -60,7 +60,7 @@ export default function Navbar() {
                   </div>
                 ))}
                 <button
-                  className="w-12 h-12 relative focus:outline-none md:hidden"
+                  className="w-12 h-12 relative focus:outline-none hidden"
                   onClick={() => {
                     toggleClass();
                     setToggle(!toggle);
